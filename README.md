@@ -1,8 +1,6 @@
 # **Pattern Matching Game on an Arduino UNO**
 The classic pattern matching game of Simon Says where a sequence is presented and the player's goal is to mimic the sequence from their memory.
 
-![Gameplay Video](content/2025-05-04%2012-22-00-play-test.mp4)
-
 ## Gameplay Mechanics
 Each LED represents a direction:
 	Yellow: UP
@@ -14,6 +12,7 @@ The game presents a random sequence it wants the player to copy through lighting
 
 The game gets progressively harder as the player passes each level by adding an additional step to the next randomly generated sequence (level). On a failed attempt, the game resets to level 1.
 
+https://github.com/user-attachments/assets/cbceb209-5688-4b7f-9bde-5de95d6bcd80
 #### Motivation for building this
 I just got this Arduino UNO 3 days ago since I've taken an interest into doing hardware projects. I did a couple of tutorials it came with to turn an LED on and off using a push button which got me hooked. So I decided I wanted to build a tiny 1-day project of my own using the basics I learnt. I know next to nothing about electronics, so I thought this pattern matching game would be the right size with the help of a friend that knows more about circuits.
 
@@ -25,6 +24,7 @@ I just got this Arduino UNO 3 days ago since I've taken an interest into doing h
 - 5x M-F Wires
 - 5x M-M Wires
 - Breadboard
+
 # Wiring Diagram
 ![Wiring Diagram](content/diagram.png)
 
@@ -39,8 +39,7 @@ If the player gets a step wrong all lights will flash and the game will reset to
 
 Have fun!
 ### Game Starting
-![Game Starting Video](content/2025-05-04%2012-18-09-startup.mp4)
-
+https://github.com/user-attachments/assets/6df3a810-a604-477c-a0d1-7362eff2caff
 ## Future Improvements
 #### Gameplay
 - Further increase difficulty in each level by shortening the time between each LED blink in the sequence.
@@ -49,9 +48,11 @@ Have fun!
 - Joystick button: Find a creative way to implement the joystick's built-in button.
 
 #### Implementation Details
-`printStickPos()`
+`getStickPos()`
 - Better evaluate diagonal inputs. Current function evaluate the X and Y positions sequentially so there is a bias to the positions that are evaluated first.
 
 --
 p.s. Thanks to my buddy David for helping me with the curcuit implementation and answering "which pin on the LED is negative?" about 100 times.
---
+
+
+
