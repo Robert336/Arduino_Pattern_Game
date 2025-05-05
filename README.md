@@ -48,7 +48,7 @@ https://github.com/user-attachments/assets/6df3a810-a604-477c-a0d1-7362eff2caff
 - Joystick button: Find a creative way to implement the joystick's built-in button.
 
 #### Implementation Details
-`getStickPos()`
+`getStickDirection()`
 - Better evaluate diagonal inputs. Current function evaluate the X and Y positions sequentially so there is a bias to the positions that are evaluated first.
 
 --
